@@ -1,0 +1,173 @@
+/* 🌍 Base */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+  transition: 0.3s;
+}
+
+/* 🌙 Dark Mode */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .container {
+  background: #1e1e1e;
+}
+
+.dark li {
+  background: #2a2a2a;
+}
+
+.dark input,
+.dark select {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* 📦 Container */
+.container {
+  background: white;
+  padding: 20px;
+  width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* 🏷️ Headings */
+h1, h2, h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* 💰 Balance */
+.balance h1 {
+  font-size: 28px;
+}
+
+/* 📊 Summary */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.income {
+  color: #2ecc71;
+}
+
+.expense {
+  color: #e74c3c;
+}
+
+/* 🔍 Filters Row */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filters input {
+  flex: 1;
+}
+
+/* 🔍 Search + 📅 Month */
+#search,
+#monthFilter {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* 📋 List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f1f1;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 5px solid;
+}
+
+li.plus {
+  border-color: #2ecc71;
+}
+
+li.minus {
+  border-color: #e74c3c;
+}
+
+/* ❌ Delete Button FIXED */
+li button {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: auto;
+  font-size: 12px;
+}
+
+/* 📝 Form */
+form {
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* ➕ Button */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* 🌙 Toggle Button */
+#toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: auto;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+/* 📊 Chart FIX */
+canvas {
+  max-width: 260px;
+  max-height: 260px;
+  margin: 20px auto;
+  display: block;
+}
