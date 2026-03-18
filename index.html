@@ -7,19 +7,16 @@
 </head>
 <body>
 
-  <!-- 🌙 Dark Mode -->
   <button id="toggle">🌙 Toggle Mode</button>
 
   <div class="container">
     <h1>💰 Finance Tracker</h1>
 
-    <!-- 💰 Balance -->
     <div class="balance">
       <h2>Your Balance</h2>
       <h1 id="balance">₹0</h1>
     </div>
 
-    <!-- 📊 Summary -->
     <div class="summary">
       <div class="income">
         <h3>Income</h3>
@@ -31,17 +28,14 @@
       </div>
     </div>
 
-    <!-- 🔍 Filters (clean row) -->
     <div class="filters">
       <input type="text" id="search" placeholder="🔍 Search transactions...">
       <input type="month" id="monthFilter">
     </div>
 
-    <!-- 📋 Transactions -->
     <h3>Transactions</h3>
     <ul id="list"></ul>
 
-    <!-- ➕ Add Transaction -->
     <h3>Add Transaction</h3>
     <form id="form">
       <input type="text" id="text" placeholder="Enter description" required>
@@ -49,25 +43,22 @@
       <input type="number" id="amount" placeholder="Enter amount (+income, -expense)" required>
 
       <select id="category">
-        <option value="Food">🍔 Food</option>
-        <option value="Travel">✈️ Travel</option>
-        <option value="Shopping">🛒 Shopping</option>
-        <option value="Salary">💰 Salary</option>
-        <option value="Other">📦 Other</option>
+        <option value="Food"> Food</option>
+        <option value="Travel"> Travel</option>
+        <option value="Shopping"> Shopping</option>
+        <option value="Salary"> Salary</option>
+        <option value="Other"> Other</option>
       </select>
 
       <button>Add</button>
     </form>
 
-    <!-- 📊 Chart -->
     <h3>Spending Overview</h3>
     <canvas id="chart"></canvas>
   </div>
 
-  <!-- 📦 Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <!-- ⚙️ Script -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 
 </body>
